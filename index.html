@@ -286,8 +286,8 @@ dialog img{max-height:78vh;width:auto;margin:0 auto;object-fit:contain}
     </div>
     <div class="marquee" aria-hidden="true">
       <ul>
-        <li>C++20 LLM engine</li><li>27.54 tokens/sec on CPU</li><li>100,000 profiles ranked</li><li>FAISS + Sentence Transformers</li><li>Gemini tool calling</li><li>WhatsApp Cloud API</li><li>20,000 simulated emergencies</li><li>FastAPI · PostgreSQL · Docker</li><li>13/13 blind diagnoses</li><li>0.853 ROC-AUC</li>
-        <li>C++20 LLM engine</li><li>27.54 tokens/sec on CPU</li><li>100,000 profiles ranked</li><li>FAISS + Sentence Transformers</li><li>Gemini tool calling</li><li>WhatsApp Cloud API</li><li>20,000 simulated emergencies</li><li>FastAPI · PostgreSQL · Docker</li><li>13/13 blind diagnoses</li><li>0.853 ROC-AUC</li>
+        <li>C++20 LLM engine</li><li>27.54 tokens/sec on CPU</li><li>100,000 profiles · 44 ms search</li><li>FAISS + Sentence Transformers</li><li>Gemini tool calling</li><li>WhatsApp Cloud API</li><li>20,000 simulated emergencies</li><li>FastAPI · PostgreSQL · Docker</li><li>13/13 blind diagnoses</li><li>0.853 ROC-AUC</li>
+        <li>C++20 LLM engine</li><li>27.54 tokens/sec on CPU</li><li>100,000 profiles · 44 ms search</li><li>FAISS + Sentence Transformers</li><li>Gemini tool calling</li><li>WhatsApp Cloud API</li><li>20,000 simulated emergencies</li><li>FastAPI · PostgreSQL · Docker</li><li>13/13 blind diagnoses</li><li>0.853 ROC-AUC</li>
       </ul>
     </div>
   </section>
@@ -371,9 +371,9 @@ dialog img{max-height:78vh;width:auto;margin:0 auto;object-fit:contain}
             <p class="what">Job matching at 100k-profile scale, with an agent on top</p>
             <p class="d">Embeds every profile with Sentence Transformers, retrieves from a FAISS index and re-ranks with a hybrid score (semantic 40%, career, skills, behaviour, availability, experience), writing a plain-English reason for every rank. A Gemini agent answers recruiter questions by calling the search as a tool, keeps conversation memory, and rejects answers that cite candidates no tool returned.</p>
             <div class="stats three">
-              <div><b>100k</b><span>profiles ranked</span></div>
-              <div><b>6</b><span>ranking signals</span></div>
-              <div><b>2</b><span>agent tools + memory</span></div>
+              <div><b>2.6×</b><span>Precision@10 vs keyword</span></div>
+              <div><b>44 ms</b><span>filtered search, 100k</span></div>
+              <div><b>0.54</b><span>P@10 on 20-query eval</span></div>
             </div>
             <div class="tags"><span>Python</span><span>Sentence Transformers</span><span>FAISS</span><span>Gemini</span><span>FastAPI</span><span>pytest</span></div>
             <div class="acts">
